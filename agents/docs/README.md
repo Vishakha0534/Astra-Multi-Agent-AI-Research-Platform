@@ -1,4 +1,5 @@
 # Multi-Agent AI Research System — Index
+## Phase - 3 ( AI agent module )
 
 > **Senior AI Systems Engineer Design Document**
 > Stack: LangGraph · GPT-4o · Gemini 2.5 Pro · Claude Sonnet · DeepSeek R1 · Qwen 3
@@ -6,7 +7,7 @@
 
 ---
 
-## Document Index
+## Document
 
 | # | Document | Description |
 |---|---|---|
