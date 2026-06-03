@@ -1,5 +1,5 @@
 # Backend Architecture — Index
-
+## Phase 1 — Backend Core Setup
 > **Senior Backend Architect Design Document**
 > Stack: FastAPI · PostgreSQL · Redis · SQLAlchemy 2.0 (async) · Alembic
 > Version: 1.0.0 | Status: Approved
