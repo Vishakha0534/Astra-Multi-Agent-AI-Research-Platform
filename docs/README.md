@@ -1,6 +1,8 @@
 # Enterprise Multi-Agent AI Research Platform
 ## Architecture Documentation Index
 
+## Phase 0 — Architecture Documentation
+
 > **Principal AI Architect Design Document**
 > Version: 1.0.0 | Status: Approved | Date: June 2026
 
