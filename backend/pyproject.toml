@@ -1,0 +1,76 @@
+[tool.poetry]
+name = "astra-backend"
+version = "1.0.0"
+description = "Astra - Multi-Agent AI Research Platform Backend"
+authors = ["Astra Engineering Team"]
+readme = "README.md"
+packages = [{include = "app"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+# Web Framework
+fastapi = "^0.115.0"
+uvicorn = {extras = ["standard"], version = "^0.32.0"}
+
+# Database
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.36"}
+asyncpg = "^0.30.0"
+alembic = "^1.14.0"
+psycopg2-binary = "^2.9.10"
+
+# Redis
+redis = {extras = ["hiredis"], version = "^5.2.0"}
+
+# Pydantic & Settings
+pydantic = {extras = ["email"], version = "^2.10.0"}
+pydantic-settings = "^2.6.0"
+
+# Auth & Security
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.17"
+
+# Logging
+structlog = "^24.4.0"
+rich = "^13.9.0"
+
+# HTTP Client
+httpx = "^0.28.0"
+
+# Utilities
+python-dateutil = "^2.9.0"
+orjson = "^3.10.0"
+ulid-py = "^1.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.0"
+pytest-asyncio = "^0.24.0"
+pytest-cov = "^6.0.0"
+httpx = "^0.28.0"
+factory-boy = "^3.3.0"
+faker = "^33.0.0"
+ruff = "^0.8.0"
+mypy = "^1.13.0"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+select = ["E", "W", "F", "I", "B", "C4", "UP"]
+ignore = ["E501", "B008"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
