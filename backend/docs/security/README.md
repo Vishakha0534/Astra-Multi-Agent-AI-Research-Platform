@@ -1,4 +1,5 @@
 # Security Architecture — Index
+## Phase - 2 (Security and authentication)
 
 > **Security Architect Design Document**
 > Methodology: STRIDE · Zero Trust · OWASP Top 10 · Defense-in-Depth
